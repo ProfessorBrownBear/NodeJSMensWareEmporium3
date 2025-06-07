@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost:27017/men_clothing_emporium', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
